@@ -1,0 +1,21 @@
+name,price,categoryName
+Laptop,1200,Electronics
+Mouse,25,Electronics
+Keyboard,45,Electronics
+Monitor,300,Electronics
+Printer,150,Electronics
+Table,200,Furniture
+Chair,150,Furniture
+Sofa,800,Furniture
+Desk Lamp,45,Furniture
+Bookshelf,120,Furniture
+Phone,800,Electronics
+Tablet,400,Electronics
+Notebook,5,Stationery
+Pen,2,Stationery
+Pencil,1,Stationery
+Eraser,0.5,Stationery
+Marker,3,Stationery
+Backpack,60,Furniture
+Calculator,25,Electronics
+Headphones,100,Electronics

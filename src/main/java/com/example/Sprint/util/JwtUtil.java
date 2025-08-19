@@ -6,20 +6,22 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.stereotype.Component;
 
 import java.security.Key;
 import java.util.Date;
 import java.util.function.Function;
 
+@Component
 public class JwtUtil {
     @Value("${secret.key}")
-    private static String SECRET_KEY;
+    private String SECRET_KEY;
 
     Key getKey(){
        return Keys.hmacShaKeyFor(SECRET_KEY.getBytes());
     }
 
-    String generateToken(String username){
+    public String generateToken(String username){
         return Jwts.builder()
                 .setSubject(username)
                 .signWith(getKey())
